@@ -7,7 +7,7 @@ router.use(express.static(__dirname + '/../public'));
 router.get('/', function(req, res){
     var ip = os.networkInterfaces().lo[0].address;
     var platform = os.platform;
-    var lang = '';
+    var lang = ''; //res.acceptslanguages object
     res.send(os.networkInterfaces())
 })
 
