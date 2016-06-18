@@ -3,6 +3,7 @@ var router = express.Router();
 var os = require('os');
 
 router.use(express.static(__dirname + '/../public'));
+
 router.get('/', function(req, res){
    res.send('Please go to /api/whoami')
 })
