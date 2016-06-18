@@ -16,7 +16,7 @@ router.get('/api/whoami', function(req, res){
     	language: lang,
     	software: software
     })
-    res.send(req.headers)
+    res.send(userInfo)
 })
 
 module.exports = router;
