@@ -8,7 +8,7 @@ router.get('/', function(req, res){
 })
 
 router.get('/api/whoami', function(req, res){
-    var ip = req.connection.remoteAddress;
+    var ip = req.ip;
     var software = req.headers['user-agent'].split(/\(|\)/)[1]; //capture what's between first set of parens
     var lang = req.headers['accept-language'].split(',')[0];
     var userInfo = JSON.stringify({
