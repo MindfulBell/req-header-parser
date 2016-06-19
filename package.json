@@ -9,6 +9,8 @@
   "author": "Tim Bell",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "mustache": "^2.2.1"
   }
 }

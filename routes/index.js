@@ -5,7 +5,7 @@ var os = require('os');
 router.use(express.static(__dirname + '/../public'));
 
 router.get('/', function(req, res){
-   res.send('Please go to /api/whoami')
+   res.render('index')
 })
 
 router.get('/api/whoami', function(req, res){
